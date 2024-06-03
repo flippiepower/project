@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e6f2e6;
+    color: #333;
+    background-image: url('images/.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    background-image: url('images/jungle_header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 2em;
+    margin-bottom: 4em; /* Added margin bottom to create space between main content and footer */
+}
+
+h2 {
+    color: #2e8b57;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em; /* Added margin bottom to create space between carousel and footer */
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: auto;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 75%; /* Adjusted top property to drop the buttons lower */
+    transform: translateY(-50%);
+    background-color: #2e8b57; /* Changed to match the website's green color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above the images */
+    border-radius: 50%; /* Rounded buttons */
+    font-size: 18px; /* Larger icons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+.prev-btn {
+    left: 15px; /* Adjusted to position correctly on the left */
+}
+
+.next-btn {
+    right: 15px; /* Adjusted to position correctly on the right */
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #3d9970; /* Slightly darker green on hover */
+}
+
+.carousel-slide img {
+    width: auto;
+    max-height: 350px; /* Smaller image height */
+    margin: auto;
+    display: block;
+    object-fit: cover; /* Ensure images cover their container */
+}
+
+.responsive-img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Added margin for spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a nicer look */
+}
+
+.artifact-img {
+	max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Added margin for spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a nicer look */
+} 
